@@ -1,9 +1,9 @@
 import time import sys import ibmiotf.app
 lication import ibmiotf.dev ice import random  
 #Provide your IBM Watson Device Credentials organization = "vq4nsy" deviceType = 
-"PNT2022TMID4465" deviceId 
+"PNT2022TMID25221" deviceId 
 = 
-"PNT2022TMID4465DEVICEID" authMethod = "token" authToken = "rjghjHFTDHB!"  
+"PNT2022TMID252215DEVICEID" authMethod = "token" authToken = "rjghjHFTDHB!"  
 # Initialize GPIO    def myCommandCallback(cmd):     print("Command received: %s" % cmd.data['command'])     status=cmd.data['command']     if status=="alarmon":         print ("Alarm is on")     elif (status == "alarmoff") :         print ("Alarm is off")     elif status == 
 "sprinkleron":         print("Sprinkler is ON")  
     elif status == "sprinklerOFF":         
